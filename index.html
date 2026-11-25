@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Sandoval | Engineering Portfolio</title>
+  <meta name="description" content="Mechanical engineering student at Texas Tech University. Robotics, rover design, CAD, and hands-on construction experience.">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Link preview for LinkedIn. After you publish, replace the URL and add a 1200x630 image at assets/img/share.jpg -->
+  <meta property="og:title" content="David Sandoval | Engineering Portfolio">
+  <meta property="og:description" content="Mechanical engineering student at Texas Tech. Robotics, rover design, CAD, and field experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/portfolio/">
+  <meta property="og:image" content="https://YOUR-GITHUB-USERNAME.github.io/portfolio/assets/img/share.jpg">
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <span class="mark">David <span>·</span> Sandoval</span>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#experience" class="hide-sm">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= INTRO ================= -->
+  <div class="intro">
+    <div class="intro-text">
+      <div class="intro-head">
+        <img class="photo" src="assets/img/headshot.png" alt="David Sandoval">
+        <div>
+          <h1>David Sandoval</h1>
+          <p class="sub">Mechanical Engineering</p>
+          <p class="school">Texas Tech University · Class of 2029</p>
+          <a class="resume-link" href="files/David_Sandoval_Resume.pdf" target="_blank" rel="noopener">View Resume (PDF)</a>
+        </div>
+      </div>
+      <p>
+        I'm a sophomore mechanical engineer who likes turning CAD into hardware. I'm the design lead on
+        Texas Tech's NASA HERC rover, I interned on a NASA design challenge, and I've spent five years
+        on residential job sites seeing how designs hold up in the field.
+      </p>
+      <p>
+        This portfolio highlights my work in robotics, rover design, and CAD, from the HERC rover's suspension
+        and steering to a swerve drive base for the Tech Robotics Association. Click any project to see the details.
+      </p>
+      <div class="pills">
+        <a class="pill" href="mailto:san60272@ttu.edu">san60272@ttu.edu</a>
+        <a class="pill" href="https://www.linkedin.com/in/davidsandoval06" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- Featured picture on the right. Swap the src to change it; edit the label text below it.
+         Clicking it opens the picture full size. -->
+    <button type="button" class="feature" data-zoom aria-label="Enlarge photo: Tech Robotics Association team">
+      <img src="assets/img/tra-team.jpg" alt="David with the Tech Robotics Association team and their competition robots">
+      <span class="feature-tag">Tech Robotics Association</span>
+    </button>
+  </div>
+
+  <!-- ================= PROJECTS =================
+       Each project is one <article class="card"> block. Clicking a card opens its detail view.
+       The card shows: picture, title, and the three facts.
+       The detail view also shows everything inside <template class="detail"> (write-up + link buttons).
+       To add a project: copy a whole <article> ... </article> block and change the text.
+       Photo: put it in assets/img/ and point the <img src="..."> at it.
+       No photo? Use a logo instead: <div class="card-img brand"><img src="assets/img/logos/NAME.png" alt=""></div> -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="group">
+      <div class="group-head">
+        <h3><img class="org" src="assets/img/logos/tra.png" alt="">Robotics · Tech Robotics Association</h3>
+        <span>3 projects · Lubbock, TX</span>
+      </div>
+
+      <div class="cards">
+        <article class="card" id="herc">
+          <div class="card-img"><img src="assets/img/herc-cad.png" alt="CAD model of the NASA HERC rover"></div>
+          <h4>NASA HERC Remote-Control Rover</h4>
+          <dl class="facts">
+            <div><dt>Time frame</dt><dd>2026 – 2027</dd></div>
+            <div><dt>Role</dt><dd>Design Lead, 10-person team</dd></div>
+            <div><dt>Tools</dt><dd>SolidWorks, Onshape, 3D printing</dd></div>
+          </dl>
+          <template class="detail">
+            <p>
+              Texas Tech's entry in NASA's Human Exploration Rover Challenge. The rover has to cross rough terrain
+              under a 60 lb limit, then line up on a marker, decode a radio command sequence, and run it on its own.
+            </p>
+            <ul>
+              <li><strong>Suspension:</strong> trailing arms with dampers up front, rocker-bogie in the rear, plus two rear wheels on a servo-driven axle that fold down for rough ground.</li>
+              <li><strong>Drivetrain:</strong> 4WD with 8 BLDC motors and servo crabwalk steering. The driver switches between tank, standard, and crabwalk modes.</li>
+              <li><strong>Wheels:</strong> aluminum hub, spokes, and ring wrapped in a ribbed, compliant TPU tread.</li>
+              <li><strong>Chassis:</strong> aluminum frame with a center X-brace, electronics boxed in the middle, battery center-back for balance.</li>
+              <li><strong>My role:</strong> engineered the chassis, suspension, and steering layout, and run three integration meetings a week to take the team through Design Review.</li>
+            </ul>
+            <div class="p-links">
+              <a class="btn" href="files/HERC_Design_Proposal.pdf" target="_blank" rel="noopener">Design proposal ↗</a>
+            </div>
+          </template>
+        </article>
+
+        <article class="card">
+          <div class="card-img fit"><img src="assets/img/swerve-base.png" alt="CAD model of the swerve drive base"></div>
+          <h4>Swerve Drive Base</h4>
+          <dl class="facts">
+            <div><dt>Club</dt><dd>Tech Robotics Association</dd></div>
+            <div><dt>Drivetrain</dt><dd>Swerve drive</dd></div>
+            <div><dt>Tools</dt><dd>Onshape</dd></div>
+          </dl>
+          <template class="detail">
+            <p>
+              A swerve drive base I designed in Onshape for the Tech Robotics Association.
+            </p>
+            <div class="p-links">
+              <a class="btn" href="https://cad.onshape.com/documents/9edb585fb8300885e19589ae/w/ec239f81609aeed849971583/e/2baf3ad2c29299a570468a72?renderMode=0&amp;uiState=6b072ec97895b23778645484" target="_blank" rel="noopener">CAD model (Onshape) ↗</a>
+            </div>
+          </template>
+        </article>
+
+        <article class="card">
+          <div class="card-img brand"><img src="assets/img/logos/tra.png" alt="Tech Robotics Association logo"></div>
+          <h4>Autonomous Navigation Routines</h4>
+          <dl class="facts">
+            <div><dt>Time frame</dt><dd>2025 – now</dd></div>
+            <div><dt>Skills</dt><dd>Robot programming</dd></div>
+            <div><dt>Hardware</dt><dd>roboRIO, SPARK MAX, Victor SP</dd></div>
+          </dl>
+          <template class="detail">
+            <p>
+              Working with other undergraduate engineers to design and integrate autonomous navigation routines for
+              FIRST robots, using roboRIO controllers with REV SPARK MAX and Victor SP motor controllers to improve
+              performance during autonomous match periods.
+            </p>
+          </template>
+        </article>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-head">
+        <h3><img class="org" src="assets/img/logos/nasa.png" alt="">Internship · NASA</h3>
+        <span>1 project · Houston, TX</span>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-img brand"><img src="assets/img/logos/nasa-worm.png" alt="NASA logo"></div>
+          <h4>ISS Expansion Module Concept</h4>
+          <dl class="facts">
+            <div><dt>Time frame</dt><dd>2023 – 2024</dd></div>
+            <div><dt>Role</dt><dd>Team Lead</dd></div>
+            <div><dt>Skills</dt><dd>CAD, systems engineering</dd></div>
+          </dl>
+          <template class="detail">
+            <p>
+              As a systems engineering intern, I led a team through a design challenge built around the
+              engineering design process, and used CAD to prototype an additional ISS module concept connected
+              to Artemis II, working under former NASA engineer Todd Zatroski.
+            </p>
+            <div class="p-links">
+              <a class="btn" href="https://youtu.be/o2BxPMzqAIQ" target="_blank" rel="noopener">Project video ↗</a>
+            </div>
+          </template>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE =================
+       Each job is one <div class="row">. The first box is the logo.
+       No logo? Use <div class="logo mono">AB</div> with the company's initials. -->
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="row">
+      <div class="logo"><img src="assets/img/logos/broderick-dean.png" alt="Broderick Dean Construction logo"></div>
+      <div class="info"><div class="what">Intern Project Supervisor</div><div class="where">Broderick Dean Construction · Tomball, TX</div></div>
+      <div class="when">Jun – Aug 2026</div>
+      <ul>
+        <li>Partnered with project managers on residential builds, applying structural, electrical, and plumbing code-compliance standards.</li>
+        <li>Led weekly punch-list reviews and subcontractor coordination, validating CAD/BIM designs against field conditions.</li>
+        <li>Managed budgets, change orders, and RFIs, using cost-control and value-engineering practices to deliver projects on budget through accurate quantity takeoffs and progress billing.</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="logo mono" aria-hidden="true">WD</div>
+      <div class="info"><div class="what">Sub-Contractor</div><div class="where">Westside Drywall &amp; Insulation · Greater Houston, TX</div></div>
+      <div class="when">Jun 2021 – now</div>
+      <ul>
+        <li>Installed batt, blown-in, and spray-foam insulation to plan-specified R-values, meeting IECC and local energy codes and passing inspections on the first walkthrough.</li>
+        <li>Maintained compliance with OSHA regulations and Industrialized Housing and Buildings (IHB) code to ensure quality and job-site safety.</li>
+        <li>Coordinated with multi-generational crews to deliver high-quality homes on schedule.</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="logo"><img src="assets/img/logos/nasa.png" alt="NASA logo"></div>
+      <div class="info"><div class="what">Systems Engineer Intern</div><div class="where">NASA · Houston, TX</div></div>
+      <div class="when">Oct 2023 – Jun 2024</div>
+      <ul>
+        <li>Led a student team through a design challenge structured around the engineering design process.</li>
+        <li>Developed a CAD prototype of an additional ISS module concept designed to interface with Artemis II.</li>
+        <li>Studied space-module design under the mentorship of former NASA engineer Todd Zatroski.</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="logo"><img src="assets/img/logos/tra.png" alt="Tech Robotics Association logo"></div>
+      <div class="info"><div class="what">Vice President</div><div class="where">Tech Robotics Association · Texas Tech</div></div>
+      <div class="when">Aug 2025 – now</div>
+      <ul>
+        <li>Partner with the Whitacre College of Engineering Outreach office to host FTC and FLL competitions for 115 West Texas schools.</li>
+        <li>Serve as Design Lead for the NASA HERC rover, coordinating a 10-member team through the Design Review phase.</li>
+        <li>Develop autonomous navigation routines on roboRIO with REV SPARK MAX and Victor SP motor controllers.</li>
+        <li>Mentor K-12 FIRST teams in CAD and manufacturing.</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="logo"><img src="assets/img/logos/asme.png" alt="ASME logo"></div>
+      <div class="info"><div class="what">Member</div><div class="where">American Society of Mechanical Engineers</div></div>
+      <div class="when">Aug 2025 – now</div>
+      <ul>
+        <li>Attend weekly chapter meetings featuring practicing engineers, building industry knowledge and a professional network.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION & SKILLS ================= -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="row">
+      <div class="logo dark"><img src="assets/img/logos/ttu.png" alt="Texas Tech University logo"></div>
+      <div class="info"><div class="what">B.S. Mechanical Engineering</div><div class="where">Texas Tech University · GPA 3.50</div></div>
+      <div class="when">May 2029</div>
+    </div>
+    <div class="row">
+      <div class="logo"><img src="assets/img/logos/lone-star.png" alt="Lone Star College logo"></div>
+      <div class="info"><div class="what">Associate of Science</div><div class="where">Lone Star College · GPA 4.00</div></div>
+      <div class="when">May 2025</div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>CAD</dt><dd>SolidWorks, AutoCAD, Onshape</dd>
+      <dt>Simulation</dt><dd>Ansys, PLECS, Multisim, LTspice, Altium</dd>
+      <dt>Programming</dt><dd>Python, MATLAB, C++, Verilog, Assembly</dd>
+      <dt>Fabrication</dt><dd>3D printing and additive manufacturing</dd>
+      <dt>Field</dt><dd>OSHA, IECC, quantity takeoffs, change orders and RFIs</dd>
+    </dl>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p class="big">Let's work together.</p>
+    <p>I'm looking for mechanical engineering internships. Email or LinkedIn is the fastest way to reach me.</p>
+    <div class="links">
+      <a href="mailto:san60272@ttu.edu">san60272@ttu.edu</a>
+      <a href="https://www.linkedin.com/in/davidsandoval06" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </section>
+
+  <footer>© <span id="year">2026</span> David Sandoval · Engineering Portfolio · Lubbock, TX</footer>
+
+</div>
+
+<!-- Project detail view. Filled in automatically from the card you click (see assets/main.js). -->
+<dialog id="project-view" aria-labelledby="pv-title">
+  <div class="pv">
+    <button type="button" class="back" data-close>← Back to all projects</button>
+    <div class="pv-grid">
+      <div class="pv-media"></div>
+      <div class="pv-text">
+        <h3 id="pv-title"></h3>
+        <div class="pv-facts"></div>
+        <div class="pv-body"></div>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- Full-size picture viewer (opens when you click a picture with data-zoom) -->
+<dialog id="lightbox" aria-label="Enlarged photo">
+  <button type="button" class="lb-close" data-close aria-label="Close">✕</button>
+  <img alt="">
+  <p class="lb-caption"></p>
+</dialog>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
